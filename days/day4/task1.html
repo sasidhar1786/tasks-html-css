@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;font-family: Arial, Helvetica, sans-serif;
+            text-transform: capitalize;
+        }
+        center{
+            font-size: 3rem;
+            background-color: ;
+        }
+        .child-1, .child-2{
+            border: 2px solid gray;
+            width: 40vw;
+            margin: 50px 60px;
+
+        }
+        hr{
+            margin: 60px;
+            height: 20px;
+            padding: 8px;
+            background-color: #f9d423;
+            border-radius: 50%;
+        }
+        h2{
+            color: antiquewhite;
+            padding: 10px;
+            margin-top: 5px;
+        }
+         ul li{
+            padding: 20px;
+            border: 2px solid rgb(106, 190, 106);
+            border-radius: 20px;
+            border-top-right-radius: 0;
+            text-align: center;
+            color: rgb(39, 36, 31);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            margin: 20px;
+            list-style: none;
+        }
+        .container{
+            background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+            /* gap: 0 10px; */
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body style="background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD)">
+    <center>restaurant menu</center><hr>
+    <center>today specials</center>
+    <div class="container">
+        <div class="child-1">
+            <h2>veg menu items</h2>
+            <ul>
+                <li><a href="../day3/imgs/download.jpeg">veg biryani</a></li>
+                <li>coconut briyani</li>
+                <li>carrot fry</li>
+                <li>kaju masals </li>
+                <li>paneer butter masala</li>
+                <li>daal fry</li>
+                <li>veg poonam dry</li>
+            </ul>
+        </div>
+        <div class="child-2">
+            <h2>non-veg menu items</h2>
+            <ul>
+                <li>chicken biryani</li>
+                <li>coconut briyani</li>
+                <li>carrot fry</li>
+                <li>kaju masals </li>
+                <li>paneer butter masala</li>
+                <li>daal fry</li>
+                <li>veg poonam dry</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
