@@ -1,11 +1,219 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz Application</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        details{
+            margin: 3px 6px 3px;
+        }
+        input{
+            margin-left: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+        p{
+            padding: 20px 2px;       }
+        .head{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+         .question {
+            width: 100%;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            padding: 50px auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            bor
+        }
+        /* .option {
+            margin-top: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }  */
+    </style>
 </head>
 <body>
-    
+    <h1>Quiz Application</h1>
+    <div class="head">
+        
+    <div class="question">
+        <p>1. What does HTML stand for?</p>
+        <div class="option">
+            <input type="radio" name="q1" value="a" id="q1_a"> <label for="q1_a">Hyper Text Markup Language</label><br>
+            <input type="radio" name="q1" value="b" id="q1_b"> <label for="q1_b">Hyperlink and Text Markup Language</label><br>
+            <input type="radio" name="q1" value="c" id="q1_c"> <label for="q1_c">Home Tool Markup Language</label><br>
+            <input type="radio" name="q1" value="d" id="q1_d"> <label for="q1_d">Hyper Text Multiple Language</label>
+        </div>
+        <details><summary>correct answer:</summary>a) hypertext markup Language</details>
+    </div>
+    <div class="question">
+        <p>2. Which tag is used to define an unordered list in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q2" value="a" id="q2_a"> <label for="q2_a"> &lt;ul&gt; </label><br>
+            <input type="radio" name="q2" value="b" id="q2_b"> <label for="q2_b"> &lt;ol&gt; </label><br>
+            <input type="radio" name="q2" value="c" id="q2_c"> <label for="q2_c"> &lt;li&gt; </label><br>
+            <input type="radio" name="q2" value="d" id="q2_d"> <label for="q2_d"> &lt;ul&gt; </label>
+        </div>
+        
+        <details><summary>correct answer:</summary>a) &lt;ul&gt;</details>
+    </div>
+    <div class="question">
+        <p>3. Which tag is used to create a hyperlink in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q3" value="a" id="q3_a"> <label for="q3_a"> &lt;link&gt; </label><br>
+            <input type="radio" name="q3" value="b" id="q3_b"> <label for="q3_b"> &lt;a&gt; </label><br>
+            <input type="radio" name="q3" value="c" id="q3_c"> <label for="q3_c"> &lt;href&gt; </label><br>
+            <input type="radio" name="q3" value="d" id="q3_d"> <label for="q3_d"> &lt;url&gt; </label>
+        </div>
+        
+        <details><summary>correct answer:</summary>b) &lt;a&gt;</details>
+        
+    </div>
+    <div class="question">
+        <p>4. Which tag is used to define a table in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q4" value="a" id="q4_a"> <label for="q4_a"> &lt;table&gt; </label><br>
+            <input type="radio" name="q4" value="b" id="q4_b"> <label for="q4_b"> &lt;tr&gt; </label><br>
+            <input type="radio" name="q4" value="c" id="q4_c"> <label for="q4_c"> &lt;td&gt; </label><br>
+            <input type="radio" name="q4" value="d" id="q4_d"> <label for="q4_d"> &lt;th&gt; </label>
+        </div>
+        
+        <details><summary>correct answer:</summary>a) &lt;table&gt;</details>
+    </div>
+    <div class="question">
+        <p>5. Which tag is used to create a horizontal line in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q5" value="a" id="q5_a"> <label for="q5_a"> &lt;br&gt; </label><br>
+            <input type="radio" name="q5" value="b" id="q5_b"> <label for="q5_b"> &lt;hr&gt; </label><br>
+            <input type="radio" name="q5" value="c" id="q5_c"> <label for="q5_c"> &lt;line&gt; </label><br>
+            <input type="radio" name="q5" value="d" id="q5_d"> <label for="q5_d"> &lt;tr&gt; </label>
+        </div>
+        
+        <details><summary>correct answer:</summary>b) &lt;hr&gt;</details>
+    </div>
+    <div class="question">
+        <p>6. Which attribute is used to specify a unique name for an element in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q6" value="a" id="q6_a"> <label for="q6_a"> id </label><br>
+            <input type="radio" name="q6" value="b" id="q6_b"> <label for="q6_b"> class </label><br>
+            <input type="radio" name="q6" value="c" id="q6_c"> <label for="q6_c"> name </label><br>
+            <input type="radio" name="q6" value="d" id="q6_d"> <label for="q6_d"> value </label>
+        </div>
+        
+        <details><summary>correct answer:</summary>a) &lt;id&gt;</details>
+    </div>
+    <div class="question">
+        <p>7. Which tag is used to create a line break in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q7" value="a" id="q7_a"> <label for="q7_a"> &lt;br&gt; </label><br>
+            <input type="radio" name="q7" value="b" id="q7_b"> <label for="q7_b"> &lt;lb&gt; </label><br>
+            <input type="radio" name="q7" value="c" id="q7_c"> <label for="q7_c"> &lt;hr&gt; </label><br>
+            <input type="radio" name="q7" value="d" id="q7_d"> <label for="q7_d"> &lt;break&gt; </label>
+        </div>
+        <details><summary>correct answer:</summary>a) &lt;br&gt;</details>
+    </div>
+    <div class="question">
+        <p>8. Which tag is used to define a hyperlink in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q8" value="a" id="q8_a"> <label for="q8_a"> &lt;link&gt; </label><br>
+            <input type="radio" name="q8" value="b" id="q8_b"> <label for="q8_b"> &lt;a&gt; </label><br>
+            <input type="radio" name="q8" value="c" id="q8_c"> <label for="q8_c"> &lt;href&gt; </label><br>
+            <input type="radio" name="q8" value="d" id="q8_d"> <label for="q8_d"> &lt;url&gt; </label>
+        </div>
+        <details><summary>correct answer:</summary>b) &lt;a&gt;</details>
+    </div>
+    <div class="question">
+        <p>9. Which tag is used to create a numbered list in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q9" value="a" id="q9_a"> <label for="q9_a"> &lt;ul&gt; </label><br>
+            <input type="radio" name="q9" value="b" id="q9_b"> <label for="q9_b"> &lt;ol&gt; </label><br>
+            <input type="radio" name="q9" value="c" id="q9_c"> <label for="q9_c"> &lt;li&gt; </label><br>
+            <input type="radio" name="q9" value="d" id="q9_d"> <label for="q9_d"> &lt;nl&gt; </label>
+        </div>
+        <details><summary>correct answer:</summary>b) &lt;ol&gt;</details>
+    </div>
+    <div class="question">
+        <p>10. Which tag is used to define a table row in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q10" value="a" id="q10_a"> <label for="q10_a"> &lt;table&gt; </label><br>
+            <input type="radio" name="q10" value="b" id="q10_b"> <label for="q10_b"> &lt;tr&gt; </label><br>
+            <input type="radio" name="q10" value="c" id="q10_c"> <label for="q10_c"> &lt;td&gt; </label><br>
+            <input type="radio" name="q10" value="d" id="q10_d"> <label for="q10_d"> &lt;th&gt; </label>
+        </div>
+        <details><summary>correct answer:</summary>b) &lt;tr&gt;</details>
+    </div>
+    <div class="question">
+        <p>11. Which attribute is used to provide additional information about an element in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q11" value="a" id="q11_a"> <label for="q11_a"> title </label><br>
+            <input type="radio" name="q11" value="b" id="q11_b"> <label for="q11_b"> info </label><br>
+            <input type="radio" name="q11" value="c" id="q11_c"> <label for="q11_c"> description </label><br>
+            <input type="radio" name="q11" value="d" id="q11_d"> <label for="q11_d"> meta </label>
+        </div>
+        <details><summary>correct answer:</summary>a) &lt;title&gt;</details>
+    </div>
+    <div class="question">
+        <p>12. Which tag is used to create a paragraph in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q12" value="a" id="q12_a"> <label for="q12_a"> &lt;paragraph&gt; </label><br>
+            <input type="radio" name="q12" value="b" id="q12_b"> <label for="q12_b"> &lt;p&gt; </label><br>
+            <input type="radio" name="q12" value="c" id="q12_c"> <label for="q12_c"> &lt;par&gt; </label><br>
+            <input type="radio" name="q12" value="d" id="q12_d"> <label for="q12_d"> &lt;para&gt; </label>
+        </div>
+        <details><summary>correct answer:</summary>b) &lt;p&gt;</details>
+    </div>
+    <div class="question">
+        <p>13. Which tag is used to define a level one heading in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q13" value="a" id="q13_a"> <label for="q13_a"> &lt;h1&gt; </label><br>
+            <input type="radio" name="q13" value="b" id="q13_b"> <label for="q13_b"> &lt;heading1&gt; </label><br>
+            <input type="radio" name="q13" value="c" id="q13_c"> <label for="q13_c"> &lt;h&gt; </label><br>
+            <input type="radio" name="q13" value="d" id="q13_d"> <label for="q13_d"> &lt;head1&gt; </label>
+        </div>
+        <details><summary>correct answer:</summary>a) &lt;h1&gt;</details>
+    </div>
+    <div class="question">
+        <p>14. Which tag is used to create a division or a section in HTML?</p>
+        <div class="option">
+            <input type="radio" name="q14" value="a" id="q14_a"> <label for="q14_a"> &lt;div&gt; </label><br>
+            <input type="radio" name="q14" value="b" id="q14_b"> <label for="q14_b"> &lt;section&gt; </label><br>
+            <input type="radio" name="q14" value="c" id="q14_c"> <label for="q14_c"> &lt;divison&gt; </label><br>
+            <input type="radio" name="q14" value="d" id="q14_d"> <label for="q14_d"> &lt;sect&gt; </label>
+        </div>
+        <details><summary>correct answer:</summary>a) &lt;div&gt;</details>
+    </div>
+    <div class="question">
+        <p>15. Which attribute is used to specify the URL of the image in an img tag?</p>
+        <div class="option">
+            <input type="radio" name="q15" value="a" id="q15_a"> <label for="q15_a"> src </label><br>
+            <input type="radio" name="q15" value="b" id="q15_b"> <label for="q15_b"> url </label><br>
+            <input type="radio" name="q15" value="c" id="q15_c"> <label for="q15_c"> href </label><br>
+            <input type="radio" name="q15" value="d" id="q15_d"> <label for="q15_d"> link </label>
+        </div>
+        <details><summary>correct answer:</summary>a) src</details>
+    </div>
+    </div>
+    <!-- <button onclick="showResult()">Submit</button>
+    <div class="result" id="result" style="display: none;">
+        <p>Your score: <span id="score"></span> out of 15</p>
+    </div> -->
 </body>
 </html>
